@@ -7,7 +7,10 @@ internal class Contribuente : Persona
 
     public void Menu()
     {
-        Console.WriteLine("Benvenuto");
+        Console.WriteLine(" /--------------\\");
+        Console.WriteLine("|    Benvenuto   |");
+        Console.WriteLine(" \\--------------/");
+
 
         Console.WriteLine("\nInserisci il tuo nome: ");
         string iNome = Console.ReadLine();
@@ -105,8 +108,9 @@ internal class Contribuente : Persona
             Console.WriteLine($"Residente a {contribuente.ComuneResidenza},");
             Console.WriteLine($"Codice Fiscale: {contribuente.CodiceFiscale.ToUpper()}");
         Console.WriteLine($"Reddito dichiarato: {contribuente.RedditoAnnuale} euro");
-        Console.WriteLine($"\nIMPOSTA DA VERSARE: {contribuente.ImpostaVersare} euro");
-
+        Console.WriteLine("\n|-----------------------------|");
+        Console.WriteLine($"|IMPOSTA DA VERSARE: {contribuente.ImpostaVersare} euro|");
+        Console.WriteLine("|-----------------------------|");
     }
     }
 
